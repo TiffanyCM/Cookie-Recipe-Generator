@@ -20,6 +20,9 @@ class MainWindow(QMainWindow):
 
         self.load_font()
 
+        self.setFixedWidth(500)
+        self.setFixedHeight(800)
+
         self.setWindowTitle("Cookie Generator")
         self.setGeometry(300,100,500,800)
 
@@ -367,5 +370,6 @@ def main():
     sys.exit(app.exec())
 
 if __name__ == "__main__":
+
 
     main()    
